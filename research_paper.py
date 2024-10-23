@@ -18,7 +18,7 @@ class ResearchPaper():
         # renames the column of the keys to 'ref_paper' in place
         reference_dict.rename(columns={'index': 'ref_paper'}, inplace=True)
         top_n_paper_citations = reference_dict.sort_values('reference_count', ascending=False)[:n]
-        print(f"Top {n} Research Sitations")
+        print(f"Top {n} Research Citations")
         print("----------------------------------")
         print(top_n_paper_citations[['ref_paper','reference_count']])
 

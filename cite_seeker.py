@@ -7,6 +7,7 @@ from research_paper import ResearchPaper
 """
 def open_read_pdf():
     # creating a pdf reader object
+    # change your path after renaming the paper
     reader = PdfReader('research_paper.pdf')
 
     citation_reader = ResearchPaper(reader=reader)
