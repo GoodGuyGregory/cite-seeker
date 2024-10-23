@@ -11,7 +11,8 @@ def open_read_pdf():
 
     citation_reader = ResearchPaper(reader=reader)
     citation_reader.parse_research_papers()
-
+    # supply number of papers to check
+    citation_reader.highest_reference_paper(5)
 
 
 
